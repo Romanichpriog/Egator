@@ -22,11 +22,17 @@ import com.example.egator.R;
  * A simple {@link Fragment} subclass.
  */
 public class SubchectActoins extends Fragment {
-    private OnFragmentInteractionListener mListener;
 
+
+    private OnFragmentInteractionListener mListener;
     private Button russianLenguageTeoria;
     private Button russianLenguageSpravochnyMaterial;
     private Button russianLenguageVariant;
+
+    public interface OnFragmentInteractionListener {
+
+        void onFragmentInteraction(int buttonId);
+    }
 
 
 
@@ -48,12 +54,7 @@ public class SubchectActoins extends Fragment {
         russianLenguageTeoria = v.findViewById(R.id.btn_russian_lenguage_teoria);
         russianLenguageSpravochnyMaterial = v.findViewById(R.id.btn_russian_lenguage_spravochny_material);
         russianLenguageVariant = v.findViewById(R.id.btn_russian_lenguage_variant);
-        View.OnClickListener onClickListener = new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                navigate();
-            }
-        };
+
 
 
         return v;
@@ -64,16 +65,19 @@ public class SubchectActoins extends Fragment {
     public void onViewCreated(@NonNull final View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
         final NavController navController = Navigation.findNavController(view);
+        View.OnClickListener onClickListener = new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                navigateTo(v.getId());
+            }
+        };
+        russianLenguageVariant.setOnClickListener(onClickListener);
+        russianLenguageTeoria.setOnClickListener(onClickListener);
+        russianLenguageSpravochnyMaterial.setOnClickListener(onClickListener);
 
 
 
     }
-
-    public interface OnFragmentInteractionListener {
-        void onFragmentInteraction(Uri uri);
-    }
-
-
 
     @Override
     public void onAttach(Context context) {
@@ -85,5 +89,16 @@ public class SubchectActoins extends Fragment {
                     + " должен реализовывать интерфейс OnFragmentInteractionListener");
         }
     }
-    public void navigate
+    public void navigateTo(int buttonId) {
+
+
+        mListener.onFragmentInteraction(buttonId);
+    }
 }
+
+
+
+
+
+
+
