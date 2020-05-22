@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/startFragment">
+
+    <fragment
+        android:id="@+id/startFragment"
+        android:name="com.example.egator.fragments.StartFragment"
+        android:label="fragment_start"
+        tools:layout="@layout/fragment_start" >
+        <action
+            android:id="@+id/action_startFragment_to_subchectActoins"
+            app:destination="@id/subchectActoins"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/subchectActoins"
+        android:name="com.example.egator.fragments.SubchectActoins"
+        android:label="fragment_subchect_actoins"
+        tools:layout="@layout/fragment_subchect_actoins" >
+        <action
+            android:id="@+id/action_subchectActoins_to_wholeVariant"
+            app:destination="@id/wholeVariant"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"/>
+        <action
+            android:id="@+id/action_subchectActoins_to_exerciseList"
+            app:destination="@id/exerciseList"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"/>
+        <action
+            android:id="@+id/action_subchectActoins_to_spravochniy"
+            app:destination="@id/spravochniy"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"/>
+    </fragment>
+    <fragment
+        android:id="@+id/wholeVariant"
+        android:name="com.example.egator.fragments.WholeVariant"
+        android:label="fragment_whole_variant"
+        tools:layout="@layout/fragment_whole_variant" />
+    <fragment
+        android:id="@+id/exerciseList"
+        android:name="com.example.egator.fragments.ExerciseList"
+        android:label="fragment_exercise_list"
+        tools:layout="@layout/fragment_exercise_list" />
+    <fragment
+        android:id="@+id/spravochniy"
+        android:name="com.example.egator.fragments.Spravochniy"
+        android:label="fragment_spravochniy"
+        tools:layout="@layout/fragment_spravochniy" />
+    <fragment
+        android:id="@+id/teoriaFragmen"
+        android:name="com.example.egator.fragments.TeoriaFragmen"
+        android:label="fragment_teoria"
+        tools:layout="@layout/fragment_teoria" />
+    <fragment
+        android:id="@+id/practica"
+        android:name="com.example.egator.fragments.Practica"
+        android:label="fragment_practica"
+        tools:layout="@layout/fragment_practica" />
+</navigation>

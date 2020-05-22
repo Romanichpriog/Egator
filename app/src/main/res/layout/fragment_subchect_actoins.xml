@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1c138e"
+
+    tools:context=".fragments.SubchectActoins"
+    >
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_russian_lenguage_teoria"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            android:textSize="20sp"
+            android:background="@drawable/button"
+            android:drawableLeft="@drawable/teoria"
+            android:textStyle="bold|italic"
+            android:layout_margin="10dp"
+            android:text="Теория"  />
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_margin="10dp">
+
+            <Button
+                android:id="@+id/btn_russian_lenguage_spravochny_material"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:background="@drawable/button"
+                android:drawableLeft="@drawable/spravka"
+                android:text="Справочный  материал"
+                android:textSize="20sp"
+                android:textStyle="bold|italic" />
+        </FrameLayout>
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_russian_lenguage_variant"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:text="Полный вариант"
+        android:textStyle="bold|italic"
+        android:textSize="20sp"
+        android:background="@drawable/button"
+        android:layout_margin="20dp"
+        android:drawableLeft="@drawable/variant"
+        android:paddingLeft="30dp"/>
+
+    </LinearLayout>
+
+    </FrameLayout>
+
+
+
+</FrameLayout>

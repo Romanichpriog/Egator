@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1c138e"
+    >
+
+    <Button
+        android:id="@+id/btn_russian_lenguage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="40dp"
+        android:text="Русский язык"
+        android:gravity="center"
+        android:padding="@dimen/button_padding"
+
+        android:textStyle="bold|italic"
+        android:textSize="30dp"
+        android:drawableLeft="@drawable/popravit"
+        android:background="@drawable/button"/>
+
+</FrameLayout>
