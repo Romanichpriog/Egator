@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "988569838478",
+    "firebase_url": "https://egator-cd382.firebaseio.com",
+    "project_id": "egator-cd382",
+    "storage_bucket": "egator-cd382.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:988569838478:android:f82af925fe94273dec3adf",
+        "android_client_info": {
+          "package_name": "com.example.egator"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "988569838478-7bp2kegkncshv7j9nglb3p7bf1jptaqk.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.egator",
+            "certificate_hash": "0ff35a79ae84603e2bb2d1fb8b5257f7b89fa02e"
+          }
+        },
+        {
+          "client_id": "988569838478-dud05dj92t5e1o6dm25bhektpf6obf0q.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCdvQotXdyuH-r-AJlkCbTHkaopSkcTiRw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "988569838478-dud05dj92t5e1o6dm25bhektpf6obf0q.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

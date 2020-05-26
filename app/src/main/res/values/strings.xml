@@ -3,4 +3,224 @@
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="nomer_zadania">задание номер " "</string>
+
+
+    <string name="hto_delat_1">Выбрать 2 предложения, которые передают содержание текста</string>
+
+    <string name="hto_znat_1">Умение работать с текстом</string>
+
+    <string name="hte_posmotret_1">https://rus-ege.sdamgia.ru/handbook?id=242</string>
+
+
+
+    <string name="hto_delat_2">подобрать союзы (сочини-тельные и подчинительные), частицы, наречия, производные предлоги, вводные слова или словосочетания</string>
+
+    <string name="hto_znat_2">Знать определения частей речи</string>
+
+    <string name="hte_posmotret_2">https://rus-ege.sdamgia.ru/handbook?id=297</string>
+
+
+
+    <string name="hto_delat_3">Определить лексическое значение слова</string>
+
+    <string name="hto_znat_3">Умение определять лексическое значение из контекста</string>
+
+    <string name="hte_posmotret_3">https://rus-ege.sdamgia.ru/handbook?id=298</string>
+
+
+
+    <string name="hto_delat_4">От учащихся требуется выписать одно из четырёх слов, в котором неверно выделено ударение</string>
+
+    <string name="hto_znat_4">Знание орфоэпических норм</string>
+
+    <string name="hte_posmotret_4">https://rus-ege.sdamgia.ru/handbook?id=252</string>
+
+
+
+    <string name="hto_delat_5">Заменить неверно употреблены пароним</string>
+
+    <string name="hto_znat_5">Знание паронимов</string>
+
+    <string name="hte_posmotret_5"> https://rus-ege.sdamgia.ru/handbook?id=251</string>
+
+
+
+    <string name="hto_delat_6">Нужно заменить или исключить неверно употребленное слово в данном контексте</string>
+
+    <string name="hto_znat_6">Знать нормы русского языка</string>
+
+    <string name="hte_posmotret_6">https://rus-ege.sdamgia.ru/handbook?id=299</string>
+
+
+
+    <string name="hto_delat_7">Заменить неверно употребленное слово</string>
+
+    <string name="hto_znat_7">Знать нормы русского языка</string>
+
+    <string name="hte_posmotret_7">https://rus-ege.sdamgia.ru/handbook?id=280</string>
+
+
+
+    <string name="hto_delat_8">Сопоставить грамматические ошибки с примерами</string>
+
+    <string name="hto_znat_8">Знать нормы написания предложений</string>
+
+    <string name="hte_posmotret_8">https://rus-ege.sdamgia.ru/handbook?id=241</string>
+
+
+
+
+    <string name="hto_delat_9">Выбрать цифры рядов где правописание корней происходит по одному принципу</string>
+
+    <string name="hto_znat_9">Знать словарные слова и корни с чередованием</string>
+
+    <string name="hte_posmotret_9">https://rus-ege.sdamgia.ru/handbook?id=230</string>
+
+
+
+
+
+
+    <string name="hto_delat_10">Выбрать цифры рядов где  буквы в приставках одинаковые</string>
+
+    <string name="hto_znat_10">Знать правописание приставок</string>
+
+    <string name="hte_posmotret_10">https://rus-ege.sdamgia.ru/handbook?id=225</string>
+
+
+
+
+    <string name="hto_delat_11">Выбрать цифры рядов где буквы в суффиксе одинаковые</string>
+
+    <string name="hto_znat_11">Знать правописание суффиксов</string>
+
+    <string name="hte_posmotret_11">https://rus-ege.sdamgia.ru/handbook?id=249</string>
+
+
+
+
+    <string name="hto_delat_12">Выбрать цифры рядов где буквы в глагольных формах одинаковые</string>
+
+    <string name="hto_znat_12">Умение писать правильно глагольные формы</string>
+
+    <string name="hte_posmotret_12">https://rus-ege.sdamgia.ru/handbook?id=250</string>
+
+
+
+
+    <string name="hto_delat_13">Выбрать слово где  слово с не/ни пишется  слитно и записать его</string>
+
+    <string name="hto_znat_13">Знать слитно раздельное написание не не</string>
+
+    <string name="hte_posmotret_13">https://rus-ege.sdamgia.ru/handbook?id=243</string>
+
+
+    <string name="hto_delat_14">Выбрать предложение где слова пишутся слитно и написать их в ответ</string>
+
+    <string name="hto_znat_14">Слитное раздельное написание различных частей речи</string>
+
+    <string name="hte_posmotret_14">https://rus-ege.sdamgia.ru/handbook?id=245</string>
+
+
+
+    <string name="hto_delat_15">Выписать цифры на месте которых лишиться н/нн</string>
+
+    <string name="hto_znat_15">Знать правописание н/нн</string>
+
+    <string name="hte_posmotret_15">https://rus-ege.sdamgia.ru/handbook?id=244</string>
+
+
+
+
+    <string name="hto_delat_16">Выбрать предложения в которых определенное количество запятых</string>
+
+    <string name="hto_znat_16">Знать пунктуацию</string>
+
+    <string name="hte_posmotret_16">https://rus-ege.sdamgia.ru/handbook?id=246</string>
+
+
+
+
+    <string name="hto_delat_17">Указать цифру или цифры на месте которых должна стоять запетая</string>
+
+    <string name="hto_znat_17">Знать пунктуацию</string>
+
+    <string name="hte_posmotret_17">https://rus-ege.sdamgia.ru/handbook?id=247</string>
+
+
+
+
+    <string name="hto_delat_18">Указать цифру или цифры на месте которых должна стоять запетая</string>
+
+    <string name="hto_znat_18">Знать пунктуацию</string>
+
+    <string name="hte_posmotret_18">https://rus-ege.sdamgia.ru/handbook?id=278</string>
+
+
+
+
+    <string name="hto_delat_19">Указать цифру или цифры на месте которых должна стоять запетая</string>
+
+    <string name="hto_znat_19">Знать пунктуацию</string>
+
+    <string name="hte_posmotret_19">https://rus-ege.sdamgia.ru/handbook?id=275</string>
+
+
+
+
+    <string name="hto_delat_20">Указать цифру или цифры на месте которых должна стоять запетая</string>
+
+    <string name="hto_znat_20">Знать пунктуацию</string>
+
+    <string name="hte_posmotret_20">https://rus-ege.sdamgia.ru/handbook?id=275</string>
+
+
+
+    <string name="hto_delat_21">Выбрать предложение, где знаки пунктуации ставятся по одному признаку</string>
+
+    <string name="hto_znat_21">Знать пунктуацию</string>
+
+    <string name="hte_posmotret_21">https://rus-ege.sdamgia.ru/handbook?id=300</string>
+
+
+
+    <string name="hto_delat_22">Указать высказывание соответствующие тексту</string>
+
+    <string name="hto_znat_22">Умение обрабатывать текст</string>
+
+    <string name="hte_posmotret_22">https://rus-ege.sdamgia.ru/handbook?id=301</string>
+
+
+
+    <string name="hto_delat_23">Выбрать верные утверждения по структуре текста</string>
+
+    <string name="hto_znat_23">Знания типов предложений и их связок</string>
+
+    <string name="hte_posmotret_23">https://rus-ege.sdamgia.ru/handbook?id=302</string>
+
+
+
+    <string name="hto_delat_24">Выписать слово по его определению</string>
+
+    <string name="hto_znat_24">Знание определений связанных со словами</string>
+
+    <string name="hte_posmotret_24">https://rus-ege.sdamgia.ru/handbook?id=303</string>
+
+
+
+
+    <string name="hto_delat_25">Указать предложения которы связаны с предыдущим одним типом связи</string>
+
+    <string name="hto_znat_25">Знать типы связи предложений</string>
+
+    <string name="hte_posmotret_25">https://rus-ege.sdamgia.ru/handbook?id=288</string>
+
+
+
+    <string name="hto_delat_26">Заполнить пропуски средствами выразительности</string>
+
+    <string name="hto_znat_26">Знать определения всезнаний средств выразительности</string>
+
+    <string name="hte_posmotret_26">https://rus-ege.sdamgia.ru/handbook?id=248</string>
 </resources>

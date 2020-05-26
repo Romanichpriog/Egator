@@ -1,9 +1,11 @@
 package com.example.egator.fragments;
 
 
-import android.content.Context;
-import android.net.Uri;
 import android.os.Bundle;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.Button;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -11,28 +13,14 @@ import androidx.fragment.app.Fragment;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 
-import android.view.LayoutInflater;
-import android.view.View;
-import android.view.ViewGroup;
-import android.widget.Button;
-
 import com.example.egator.R;
 
-/**
- * A simple {@link Fragment} subclass.
- */
-public class SubchectActoins extends Fragment {
+public class SubchectActoins extends Fragment implements View.OnClickListener {
 
-
-    private OnFragmentInteractionListener mListener;
+    private NavController navController;
     private Button russianLenguageTeoria;
-    private Button russianLenguageSpravochnyMaterial;
     private Button russianLenguageVariant;
 
-    public interface OnFragmentInteractionListener {
-
-        void onFragmentInteraction(int buttonId);
-    }
 
 
 
@@ -52,8 +40,8 @@ public class SubchectActoins extends Fragment {
         // Inflate the layout for this fragment
         View v = inflater.inflate(R.layout.fragment_subchect_actoins, container, false);
         russianLenguageTeoria = v.findViewById(R.id.btn_russian_lenguage_teoria);
-        russianLenguageSpravochnyMaterial = v.findViewById(R.id.btn_russian_lenguage_spravochny_material);
         russianLenguageVariant = v.findViewById(R.id.btn_russian_lenguage_variant);
+        navController= Navigation.findNavController(container);
 
 
 
@@ -64,35 +52,25 @@ public class SubchectActoins extends Fragment {
     @Override
     public void onViewCreated(@NonNull final View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-        final NavController navController = Navigation.findNavController(view);
-        View.OnClickListener onClickListener = new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                navigateTo(v.getId());
-            }
-        };
-        russianLenguageVariant.setOnClickListener(onClickListener);
-        russianLenguageTeoria.setOnClickListener(onClickListener);
-        russianLenguageSpravochnyMaterial.setOnClickListener(onClickListener);
+        russianLenguageVariant.setOnClickListener(this);
+        russianLenguageTeoria.setOnClickListener(this);
+
 
 
 
     }
+
 
     @Override
-    public void onAttach(Context context) {
-        super.onAttach(context);
-        try {
-            mListener = (OnFragmentInteractionListener) context;
-        } catch (ClassCastException e) {
-            throw new ClassCastException(context.toString()
-                    + " должен реализовывать интерфейс OnFragmentInteractionListener");
+    public void onClick(View v) {
+        switch (v.getId()){
+            case R.id.btn_russian_lenguage_teoria:
+                navController.navigate(R.id.action_subchectActoins_to_exerciseList);
+                break;
+            case R.id.btn_russian_lenguage_variant:
+                navController.navigate(R.id.action_subchectActoins_to_practica);
+                break;
         }
-    }
-    public void navigateTo(int buttonId) {
-
-
-        mListener.onFragmentInteraction(buttonId);
     }
 }
 

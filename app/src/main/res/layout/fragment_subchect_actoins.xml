@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#1c138e"
+    android:background="@color/backgroung_colour"
 
     tools:context=".fragments.SubchectActoins"
     >
@@ -15,42 +15,22 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
+
 
         <Button
             android:id="@+id/btn_russian_lenguage_teoria"
-            android:layout_width="0dp"
+            android:layout_width="match_parent"
             android:layout_height="100dp"
-            android:layout_weight="1"
-            android:textSize="20sp"
+            android:textSize="30dp"
             android:background="@drawable/button"
             android:drawableLeft="@drawable/teoria"
             android:textStyle="bold|italic"
-            android:layout_margin="10dp"
+            android:layout_margin="20dp"
             android:text="Теория"  />
 
-        <FrameLayout
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:layout_margin="10dp">
-
-            <Button
-                android:id="@+id/btn_russian_lenguage_spravochny_material"
-                android:layout_width="match_parent"
-                android:layout_height="100dp"
-                android:background="@drawable/button"
-                android:drawableLeft="@drawable/spravka"
-                android:text="Справочный  материал"
-                android:textSize="20sp"
-                android:textStyle="bold|italic" />
-        </FrameLayout>
 
 
-    </LinearLayout>
+
 
     <Button
         android:id="@+id/btn_russian_lenguage_variant"
