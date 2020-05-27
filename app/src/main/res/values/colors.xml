@@ -6,4 +6,7 @@
     <color name="buttom_color">#ffd800</color>
     <color name="backgroung_colour">#1c138e</color>
     <color name="text_color">#e6fff9</color>
+    <color name="ed_normal">#a8bab5</color>
+    <color name="ed_active">#dff7f1</color>
+    <color name="ed_pressed">#c9d60b</color>
 </resources>

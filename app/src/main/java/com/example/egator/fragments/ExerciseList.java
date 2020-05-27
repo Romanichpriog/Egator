@@ -20,8 +20,6 @@ import com.example.egator.adapters.ExerciseListAdapter;
 public class ExerciseList extends Fragment {
     private RecyclerView exerciseList;
     private ExerciseListAdapter exerciseListAdapter;
-
-
     public ExerciseList() {
         // Required empty public constructor
     }
@@ -40,6 +38,7 @@ public class ExerciseList extends Fragment {
         exerciseList.setHasFixedSize(true);
         exerciseListAdapter = new ExerciseListAdapter(26,navController);
         exerciseList.setAdapter(exerciseListAdapter);
+
 
         return view;
     }

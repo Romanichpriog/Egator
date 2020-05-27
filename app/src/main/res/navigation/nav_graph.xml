@@ -59,14 +59,38 @@
         android:id="@+id/teoriaFragmen"
         android:name="com.example.egator.fragments.TeoriaFragmen"
         android:label="fragment_teoria"
-        tools:layout="@layout/fragment_teoria" >
+        tools:layout="@layout/fragment_teoria"
+        >
+        <argument
+            android:name="masivzadani"
+            android:defaultValue="None"/>
         <action
             android:id="@+id/action_teoriaFragmen_to_practica"
             app:destination="@id/practica" />
+        <action
+            android:id="@+id/action_teoriaFragmen_self"
+            app:destination="@id/teoriaFragmen" />
     </fragment>
     <fragment
         android:id="@+id/practica"
         android:name="com.example.egator.fragments.Practica"
         android:label="fragment_practica"
-        tools:layout="@layout/fragment_practica" />
+        tools:layout="@layout/fragment_practica">
+
+        <argument
+            android:name="text"
+            android:defaultValue="None"/>
+        <action
+            android:id="@+id/action_practica_to_text_dlia_zadania"
+            app:destination="@id/text_dlia_zadania"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"/>
+    </fragment>
+    <fragment
+        android:id="@+id/text_dlia_zadania"
+        android:name="com.example.egator.fragments.text_dlia_zadania"
+        android:label="fragment_text_dlia_zadania"
+        tools:layout="@layout/fragment_text_dlia_zadania" />
 </navigation>
