@@ -2,7 +2,6 @@ package com.example.egator.adapters;
 
 import android.content.Context;
 import android.os.Bundle;
-import android.os.Parcelable;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -12,15 +11,12 @@ import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.navigation.NavController;
-import androidx.navigation.NavType;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.egator.R;
 import com.example.egator.view.Otvet;
 
-import java.lang.reflect.Array;
 import java.util.ArrayList;
-import java.util.List;
 
 public class ZadanieListAdapter extends RecyclerView.Adapter<ZadanieListAdapter.ZadanieViewHolder>{
     private NavController navController;
@@ -44,7 +40,7 @@ public class ZadanieListAdapter extends RecyclerView.Adapter<ZadanieListAdapter.
 
 
         View view = inflater.inflate(layoutIdForListItem,parent,false);
-        ZadanieViewHolder viewHolder = new ZadanieViewHolder(view,navController,otvetList,feedBack);
+        ZadanieViewHolder viewHolder = new ZadanieViewHolder(view,navController,otvetList);
 
 
 
@@ -64,21 +60,9 @@ public class ZadanieListAdapter extends RecyclerView.Adapter<ZadanieListAdapter.
 
     class ZadanieViewHolder extends RecyclerView.ViewHolder{
 
-        private String[] feedback;
+
         private NavController navController;
         private ArrayList<Otvet> otvetList;
-
-        public String[] getFeedback() {
-            return feedback;
-        }
-
-        public ZadanieViewHolder(@NonNull View itemView, NavController navController, ArrayList<Otvet> otvetList, String[] feedback) {
-            super(itemView);
-            this.navController = navController;
-            this.otvetList = otvetList;
-            this.feedback=feedback;
-        }
-
         TextView zadanie;
         TextView uslovie;
         EditText vvod;
@@ -87,52 +71,43 @@ public class ZadanieListAdapter extends RecyclerView.Adapter<ZadanieListAdapter.
 
 
 
-        public ZadanieViewHolder(@NonNull View itemView) {
+        public ZadanieViewHolder(@NonNull View itemView, final NavController navController, final ArrayList<Otvet> otvetList) {
             super(itemView);
+            this.navController = navController;
+            this.otvetList = otvetList;
 
+
+
+
+
+            zadanie=itemView.findViewById(R.id.tv_textdlia_zadania);
+            uslovie=itemView.findViewById(R.id.tv_uslovie);
             save=itemView.findViewById(R.id.btn_save);
-            zadanie = itemView.findViewById(R.id.tv_text_zadania);
-            uslovie = itemView.findViewById(R.id.tv_uslovie);
-            vvod = itemView.findViewById(R.id.et_otvet_polzovatelia);
-            toText = itemView.findViewById(R.id.btn_pereiti_v_text);
-            save.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    feedback[getAdapterPosition()]=vvod.getText().toString();
+            vvod=itemView.findViewById(R.id.et_otvet_polzovatelia);
+            toText=itemView.findViewById(R.id.btn_go_to_zadania);
 
-                }
-            });
-            toText.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    Bundle bundle = new Bundle();
-                    String textDliaPeredachi=otvetList.get(getAdapterPosition()).getText();
-                    bundle.putString("text",textDliaPeredachi);
-                    navController.navigate(R.id.action_practica_to_text_dlia_zadania,bundle);
-                }
-            });
+
+
+
         }
-        public void bind(int position){
-            //if (feedback[position]!=null){
-                //vvod.setText(feedBack[position]);
-            //}
-            zadanie.setText(otvetList.get(position).getTextzadania());
-            if (otvetList.get(position).getUslovie()!= "null"){
-                uslovie.setText(otvetList.get(position).getUslovie());
-            }else {
-                uslovie.setText("");
+        public void bind(int listIndex){
+
+            if(otvetList.get(listIndex).getUslovie()!="null"){
+                uslovie.setText(otvetList.get(listIndex).getUslovie());
             }
-            if (position<3 | position>20){
+            zadanie.setText(otvetList.get(listIndex).getTextzadania());
+            if(listIndex<3 | listIndex>20){
                 toText.setVisibility(View.VISIBLE);
-                toText.setClickable(true);
-                toText.setText("Text");
             }else {
                 toText.setVisibility(View.INVISIBLE);
-                toText.setClickable(false);
-                toText.setText("");
             }
-
-
         }
+
+
+
+
+
+
+
     }
 }

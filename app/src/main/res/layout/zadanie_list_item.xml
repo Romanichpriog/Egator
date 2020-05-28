@@ -12,6 +12,7 @@
         android:padding="10dp"
         android:textColor="@color/text_color"/>
     <Button
+        android:visibility="invisible"
         android:id="@+id/btn_pereiti_v_text"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
