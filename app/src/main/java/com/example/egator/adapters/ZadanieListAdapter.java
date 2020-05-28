@@ -38,7 +38,7 @@ public class ZadanieListAdapter extends RecyclerView.Adapter<ZadanieListAdapter.
     @Override
     public ZadanieViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         Context context = parent.getContext();
-        int layoutIdForListItem= R.layout.exrcise_list_item;
+        int layoutIdForListItem= R.layout.zadanie_list_item;
         LayoutInflater inflater = LayoutInflater.from(context);
 
 
